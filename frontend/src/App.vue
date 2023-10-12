@@ -30,145 +30,118 @@
               <a class="black-text">Apóyanos</a>
             </li>
             <li>
-              <a class="waves-effect waves-light btn-large black"
+              <a class="waves-effect waves-light btn-large black" href="/login"
                 >LOG IN<i class="material-icons right">account_box</i></a
               >
             </li>
           </ul>
         </div>
       </nav>
-    </HeaderBar>
-    <div class="carousel carousel-slider">
-      <a class="carousel-item" href=""
-        ><img src="https://i.imgur.com/TJOfkXv.png"
-      /></a>
-      <a class="carousel-item" href=""
-        ><img src="https://i.imgur.com/tnhrUBu.png"
-      /></a>
-    </div>
-    <div class="center-align">
-      <h4>¿Cómo funciona?</h4>
-      <p>
-        Esta es un medio en donde los estudiantes pueden complementar sus
-        conocimientos y aprender a su ritmo. Además, los profesores podrán
-        monitorear a sus alumnos y mejorar su método de enseñanza.
-      </p>
-    </div>
-    <div class="center-align">
-      <h4>¿Que ofrecemos?</h4>
-    </div>
-    <div
-      class="center-align"
-      style="
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-        overflow-y: auto;
-      "
-    >
-      <ul class="collection">
-        <li class="collection-item avatar">
-          <img
-            src="https://static.vecteezy.com/system/resources/previews/002/131/148/non_2x/virtual-classroom-rgb-color-icon-vector.jpg"
-            alt=""
-            class="circle"
-            style="max-width: 60px; max-height: 60px"
-          />
-          <span class="title">Campus virtual</span>
+      <div class="carousel carousel-slider">
+        <a class="carousel-item" href=""
+          ><img src="https://i.imgur.com/TJOfkXv.png"
+        /></a>
+        <a class="carousel-item" href=""
+          ><img src="https://i.imgur.com/tnhrUBu.png"
+        /></a>
+      </div>
+      <div class="center-align">
+        <h4>¿Cómo funciona?</h4>
+        <div class="center-align">
           <p>
-            Participa de nuestros cursos virtuales y programas formativos para
-            fortalecer tus capacidades
-          </p>
-        </li>
-        <li class="collection-item avatar">
-          <img
-            src="https://cdn-icons-png.flaticon.com/512/4862/4862723.png"
-            alt=""
-            class="circle"
-            style="max-width: 60px; max-height: 60px"
-          />
-          <span class="title">Perfil personal</span>
-          <p>
-            Gestiona tu información personal y visualiza las actividades que
-            desarrollas.
-          </p>
-        </li>
-        <li class="collection-item avatar">
-          <img
-            src="https://cdn-icons-png.flaticon.com/512/747/747062.png"
-            alt=""
-            class="circle"
-            style="max-width: 60px; max-height: 60px"
-          />
-          <span class="title">Material educativo</span>
-          <p>
-            Encuentra y utiliza materiales educativos digitales para fortalecer
-            tu aprendizaje.
-          </p>
-        </li>
-        <li class="collection-item avatar">
-          <img
-            src="https://cdn-icons-png.flaticon.com/512/3044/3044095.png"
-            alt=""
-            class="circle"
-            style="max-width: 60px; max-height: 60px"
-          />
-          <span class="title">Grabacion de clases</span>
-          <p>Accede a clases virtuales y revisa las grabaciones.</p>
-        </li>
-        <li class="collection-item avatar">
-          <img
-            src="https://cdn-icons-png.flaticon.com/512/2170/2170765.png"
-            alt=""
-            class="circle"
-            style="max-width: 60px; max-height: 60px"
-          />
-          <span class="title">Comunidad</span>
-          <p>
-            Accede a nuestra comunidad en línea con otros alumnos dentro de
-            nuestra plataforma
-          </p>
-        </li>
-      </ul>
-    </div>
-    <div
-      class="center-align"
-      style="
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-      "
-    >
-      <div class="card" style="width: 400px; height: 400px">
-        <div class="card-image waves-effect waves-block waves-light">
-          <img
-            class="activator"
-            src="https://static.vecteezy.com/system/resources/previews/007/776/528/non_2x/donation-rgb-color-icon-financial-support-and-grant-sponsoring-and-funding-support-with-cash-isolated-illustration-simple-filled-line-drawing-editable-stroke-vector.jpg"
-          />
-        </div>
-        <div class="card-content">
-          <span class="card-title activator grey-text text-darken-4"
-            >Se parte de nuestro proyecto<i class="material-icons right"
-              >more_vert</i
-            ></span
-          >
-          <p><a href="#">Apóyanos</a></p>
-        </div>
-        <div class="card-reveal">
-          <span class="card-title grey-text text-darken-4"
-            >Apóyanos<i class="material-icons right">close</i></span
-          >
-          <p>
-            Juntos, estamos construyendo un futuro más brillante para los
-            estudiantes. Tu apoyo es la clave para hacer que sus sueños se hagan
-            realidad
+            Esta es un medio en donde los estudiantes pueden complementar sus
+            conocimientos y aprender a su ritmo.<br />
+            Además, los profesores podrán monitorear a sus alumnos y mejorar su
+            método de enseñanza.
           </p>
         </div>
       </div>
-    </div>
-    <footer class="page-footer">
+      <div class="center-align">
+        <h4>¿Que ofrecemos?</h4>
+      </div>
+      <div class="row">
+        <div class="center-align col s4">
+          <img
+            src="https://static.vecteezy.com/system/resources/previews/002/131/148/non_2x/virtual-classroom-rgb-color-icon-vector.jpg"
+            alt=""
+            style="max-width: 100px; max-height: 100px"
+          />
+          <h4>Campus virtual</h4>
+          <p>
+            Participa de nuestros cursos virtuales y programas <br />formativos
+            para fortalecer tus capacidades
+          </p>
+        </div>
+        <div class="center-align col s4">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/4862/4862723.png"
+            alt=""
+            style="max-width: 100px; max-height: 100px"
+          />
+          <h4>Perfil personal</h4>
+          <p>
+            Gestiona tu información personal y visualiza las <br />actividades
+            que desarrollas.
+          </p>
+        </div>
+        <div class="center-align col s4">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/747/747062.png"
+            alt=""
+            style="max-width: 100px; max-height: 100px"
+          />
+          <h4>Material educativo</h4>
+          <p>
+            Encuentra y utiliza materiales educativos digitales <br />para
+            fortalecer tu aprendizaje.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="center-align col s6">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/2170/2170765.png"
+            alt=""
+            style="max-width: 100px; max-height: 100px"
+          />
+          <h4>Comunidad</h4>
+          <p>
+            Accede a nuestra comunidad en línea con otros <br />alumnos dentro
+            de nuestra plataforma
+          </p>
+        </div>
+        <div class="center-align col s6">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/3044/3044095.png"
+            alt=""
+            style="max-width: 100px; max-height: 100px"
+          />
+          <h4>Grabacion de clases</h4>
+          <p>Accede a clases virtuales y revisa las grabaciones.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="center-align col s12 red">
+          <div class="center-align white-text">
+            <h4>Apóyanos</h4>
+            <img
+              src="https://img.freepik.com/iconos-gratis/plan_318-922549.jpg?w=2000"
+              alt=""
+              style="max-width: 100px; max-height: 100px"
+            />
+            <p>
+              Juntos, estamos construyendo un futuro más brillante para los
+              estudiantes. Tu apoyo es la clave para hacer que sus sueños se
+              hagan realidad
+            </p>
+            <a class="waves-effect waves-light btn-large red"
+              >Apoyanos<i class="material-icons right">attach_money</i></a
+            >
+          </div>
+        </div>
+      </div>
+    </HeaderBar>
+    <footer class="page-footer black">
       <div class="container">
         <div class="row">
           <div class="col s12">
