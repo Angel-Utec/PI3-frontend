@@ -10,17 +10,47 @@ const routes = [
   {
     path: "/login",
     name: "login",
-    component: () => import("../components/Logins.vue"),
+    component: () =>
+      import(/* webpackChunkName: "Category" */ "../components/Logins.vue"),
   },
-  //{
-  //  path: "/about",
-  //  name: "about",
-  // route level code-splitting
-  // this generates a separate chunk (about.[hash].js) for this route
-  // which is lazy-loaded when the route is visited.
-  //  component: () =>
-  //    import(/* webpackChunkName: "about" */ "../views/AboutView.vue"),
-  //},
+  {
+    path: "/quienes-somos",
+    name: "quienes-somos",
+    component: () =>
+      import(/* webpackChunkName: "Category" */ "../components/Somos.vue"),
+  },
+  {
+    path: "/FAQ",
+    name: "FAQ",
+    component: () =>
+      import(/* webpackChunkName: "Category" */ "../components/Faqs.vue"),
+  },
+  {
+    path: "/guide",
+    name: "guide",
+    component: () =>
+      import(/* webpackChunkName: "Category" */ "../components/Guides.vue"),
+  },
+  {
+    path: "/ayuda",
+    name: "ayuda",
+    component: () =>
+      import(/* webpackChunkName: "Category" */ "../components/Ayudas.vue"),
+  },
+  {
+    path: "/cursos",
+    name: "cursos",
+    component: () =>
+      import(/* webpackChunkName: "Category" */ "../components/Cursos.vue"),
+  },
+  {
+    path: "/curso-social",
+    name: "historia",
+    component: () =>
+      import(
+        /* webpackChunkName: "Category" */ "../components/Cursos-historia.vue"
+      ),
+  },
 ];
 
 const router = createRouter({

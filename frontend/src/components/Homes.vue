@@ -1,11 +1,11 @@
 <template>
   <div class="carousel carousel-slider">
-    <a class="carousel-item" href=""
-      ><img src="https://i.imgur.com/TJOfkXv.png"
-    /></a>
-    <a class="carousel-item" href=""
-      ><img src="https://i.imgur.com/tnhrUBu.png"
-    /></a>
+    <router-link to="/login">
+      <a class="carousel-item"><img src="https://i.imgur.com/TJOfkXv.png" /></a>
+    </router-link>
+    <router-link to="/ayuda">
+      <a class="carousel-item"><img src="https://i.imgur.com/tnhrUBu.png" /></a>
+    </router-link>
   </div>
   <div class="center-align">
     <h4>¿Cómo funciona?</h4>
@@ -96,8 +96,10 @@
           estudiantes. Tu apoyo es la clave para hacer que sus sueños se hagan
           realidad
         </p>
-        <a class="waves-effect waves-light btn-large red"
-          >Apoyanos<i class="material-icons right">attach_money</i></a
+        <router-link to="/ayuda"
+          ><a class="waves-effect waves-light btn-large red"
+            >Apoyanos<i class="material-icons right">attach_money</i></a
+          ></router-link
         >
       </div>
     </div>
@@ -122,14 +124,10 @@ body {
   height: 100%;
 }
 
-#background-gif {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1; /* Asegura que el GIF esté en el fondo */
-  pointer-events: none; /* Evita que el GIF interfiera con los elementos de primer plano */
+.custom-navbar {
+  height: 75px;
+  padding: 0px;
+  background-color: white;
 }
 
 .collection-item.avatar img.circle {
@@ -148,6 +146,8 @@ import M from "materialize-css";
 
 export default {
   mounted() {
+    M.AutoInit();
+
     document.addEventListener("DOMContentLoaded", function () {
       var elems = document.querySelectorAll(".sidenav");
       M.Sidenav.init(elems);

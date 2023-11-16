@@ -1,18 +1,18 @@
 <template>
-  <div class="Login">
+  <div class="Somoss">
     <h1></h1>
-    <Logins />
+    <Somoss />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import Logins from "@/components/Logins.vue";
+import Somoss from "@/components/Somos.vue";
 
 export default {
-  name: "Login",
+  name: "Somoss",
   components: {
-    Logins,
+    Somoss,
   },
 };
 </script>

@@ -1,5 +1,5 @@
 {
-  "name": "EducaTEC",
+  "name": "Educatec",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -10,11 +10,8 @@
   "dependencies": {
     "axios": "^0.27.2",
     "core-js": "^3.8.3",
-    "csv-parser": "^3.0.0",
     "material-design-icons": "^3.0.1",
     "materialize-css": "^1.0.0-rc.2",
-    "papaparse": "^5.4.1",
-    "stream-browserify": "^3.0.0",
     "vue": "^3.2.13",
     "vue-axios": "^3.4.1",
     "vue-router": "^4.0.3",
