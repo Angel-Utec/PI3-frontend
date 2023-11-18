@@ -1,10 +1,11 @@
 <template>
   <div class="home">
     <div class="home_background_container prlx_parent">
-      <div class="home_background prlx with-background"></div>
-    </div>
-    <div class="home_content center-align">
-      <h1>Cursos</h1>
+      <div class="home_background prlx with-background">
+        <div class="home_content center-align">
+          <h1>Cursos</h1>
+        </div>
+      </div>
     </div>
   </div>
   <div class="popular-section">

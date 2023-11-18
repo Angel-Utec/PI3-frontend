@@ -1,10 +1,18 @@
 <template>
-  <div class="carousel carousel-slider">
+  <div class="carousel carousel-slider custom-carousel">
     <router-link to="/login">
-      <a class="carousel-item"><img src="https://i.imgur.com/TJOfkXv.png" /></a>
+      <a class="carousel-item"
+        ><img
+          src="https://i.imgur.com/TJOfkXv.png"
+          style="max-width: 100%; max-height: 100%"
+      /></a>
     </router-link>
     <router-link to="/ayuda">
-      <a class="carousel-item"><img src="https://i.imgur.com/tnhrUBu.png" /></a>
+      <a class="carousel-item"
+        ><img
+          src="https://i.imgur.com/tnhrUBu.png"
+          style="max-width: 100%; max-height: 100%"
+      /></a>
     </router-link>
   </div>
   <div class="center-align">
@@ -138,6 +146,11 @@ body {
 .collection-item.avatar img.circle {
   max-width: 100px; /* Ajusta el tamaño máximo de la imagen */
   max-height: 100px; /* Ajusta el tamaño máximo de la imagen */
+}
+.custom-carousel {
+  max-width: 100%; /* Cambia este valor según tus necesidades */
+  min-height: 600px;
+  margin: auto; /* Centra el carrusel en la página */
 }
 </style>
 

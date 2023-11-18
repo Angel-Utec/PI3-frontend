@@ -51,6 +51,12 @@ const routes = [
         /* webpackChunkName: "Category" */ "../components/Cursos-historia.vue"
       ),
   },
+  {
+    path: "/register",
+    name: "register",
+    component: () =>
+      import(/* webpackChunkName: "Category" */ "../components/Users.vue"),
+  },
 ];
 
 const router = createRouter({

@@ -73,7 +73,7 @@ export default {
         const userID = data["profile"]["user_id"];
         localStorage.setItem("user_id", userID);
         this.$router.push({
-          name: "posts",
+          name: "guide",
           params: {
             username: data["profile"]["username"],
             user_id: parseInt(data["profile"]["user_id"]),

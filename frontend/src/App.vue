@@ -24,16 +24,12 @@
                 <a class="black-text">¿Quienes somos?</a>
               </router-link>
             </li>
-            <li style="margin-right: 40px">
+            <li style="margin-right: 40px" v-if="showGuideSection">
               <router-link to="/guide">
                 <a class="black-text">Guía</a>
               </router-link>
             </li>
-            <li style="margin-right: 40px">
-              <router-link to="/cursos">
-                <a class="black-text">Cursos</a>
-              </router-link>
-            </li>
+
             <li style="margin-right: 40px">
               <router-link to="/ayuda">
                 <a class="black-text">Apóyanos</a>
@@ -120,7 +116,18 @@ footer.page-footer.black {
 import M from "materialize-css";
 
 export default {
+  data() {
+    return {
+      showGuideSection: false,
+    };
+  },
+
   mounted() {
+    // Verificar la presencia de un usuario en el LocalStorage
+    const userId = localStorage.getItem("user_id");
+
+    // Actualizar la propiedad showGuideSection según la presencia del usuario
+    this.showGuideSection = !!userId;
     M.AutoInit();
     document.addEventListener("DOMContentLoaded", function () {
       var elems = document.querySelectorAll(".sidenav");
