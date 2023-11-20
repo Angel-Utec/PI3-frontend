@@ -55,7 +55,7 @@ export default {
 
   methods: {
     async login() {
-      const path = "http://54.89.201.63:5001/login";
+      const path = "http://54.89.201.63:5000/login";
       const response = await fetch(path, {
         method: "POST",
         body: JSON.stringify({
@@ -71,7 +71,9 @@ export default {
       console.log("data: ", data);
       if (data["success"]) {
         const userID = data["profile"]["user_id"];
+        const name = data["profile"]["username"];
         localStorage.setItem("user_id", userID);
+        localStorage.setItem("user_name", name);
         this.$router.push({
           name: "guide",
           params: {

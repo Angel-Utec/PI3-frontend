@@ -39,14 +39,20 @@
                 <a class="black-text">Apóyanos</a>
               </router-link>
             </li>
-            <li>
-              <router-link to="/login"
-                ><a
+            <!-- Verifica si el usuario está logeado y muestra su nombre -->
+            <li v-if="isLoggedIn">
+              <a class="black-text">{{ userName }}</a>
+            </li>
+            <!-- Verifica si el usuario NO está logeado y muestra el botón de inicio de sesión -->
+            <li v-else>
+              <router-link to="/login">
+                <a
                   class="waves-effect waves-light btn-large black"
                   href="/login"
-                  >LOG IN<i class="material-icons right">account_box</i></a
-                ></router-link
-              >
+                >
+                  LOG IN<i class="material-icons right">account_box</i>
+                </a>
+              </router-link>
             </li>
           </ul>
         </div>
@@ -123,15 +129,25 @@ export default {
   data() {
     return {
       showGuideSection: false,
+      isLoggedIn: false, // Agrega una propiedad para verificar si el usuario está logeado
+      userName: "", // Agrega una propiedad para almacenar el nombre del usuario
     };
   },
 
   mounted() {
     // Verificar la presencia de un usuario en el LocalStorage
     const userId = localStorage.getItem("user_id");
+    const name = localStorage.getItem("user_name");
 
     // Actualizar la propiedad showGuideSection según la presencia del usuario
     this.showGuideSection = !!userId;
+    if (userId) {
+      this.isLoggedIn = true;
+      // Recupera el nombre del usuario desde donde lo tengas almacenado
+      // Puedes ajustar esta lógica según cómo manejes la autenticación en tu aplicación
+      this.userName = name; // Reemplaza con la lógica real
+    }
+
     M.AutoInit();
     document.addEventListener("DOMContentLoaded", function () {
       var elems = document.querySelectorAll(".sidenav");

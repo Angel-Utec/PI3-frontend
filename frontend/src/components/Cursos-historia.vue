@@ -12,7 +12,7 @@
         allowfullscreen
       ></iframe>
     </div>
-    <div class="center-align" v-if="claseActual < 1">
+    <div class="center-align" v-if="claseActual < 0">
       <button
         class="waves-effect waves-light center-align btn-large red"
         @click="loadNextClass"
@@ -21,8 +21,8 @@
       </button>
     </div>
     <div class="center-align">
-      <router-link to="/quiz-historia" v-if="claseActual === 1">
-        <a class="waves-effect waves-light btn-large blue">
+      <router-link to="/quiz-historia" v-if="claseActual === 0">
+        <a class="waves-effect waves-light btn-large red">
           Inicie el Quiz<i class="material-icons right">send</i>
         </a>
       </router-link>
@@ -35,10 +35,7 @@ export default {
   data() {
     return {
       currentClass: 0, // Índice de la clase actual
-      videos: [
-        "https://www.youtube.com/embed/ycWu_zxgOXM?si=yJHAI2yj7LKSdSH3",
-        "https://www.youtube.com/embed/ycWu_zxgOXM?si=yJHAI2yj7LKSdSH3",
-      ],
+      videos: ["https://www.youtube.com/embed/koshMSnPpmY?si=UfU5qqSo_BaPbgIw"],
       claseActual: 0,
     };
   },
