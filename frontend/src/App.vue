@@ -12,7 +12,11 @@
           <a
             href="/"
             class="brand-logo black-text"
-            style="font-family: 'Young Serif', serif; padding-left: 60px"
+            style="
+              font-family: 'Young Serif', serif;
+              padding-left: 60px;
+              padding-top: 5px;
+            "
             >EducaTEC</a
           >
           <ul

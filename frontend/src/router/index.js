@@ -52,6 +52,12 @@ const routes = [
       ),
   },
   {
+    path: "/quiz",
+    name: "Quiz1",
+    component: () =>
+      import(/* webpackChunkName: "Category" */ "../components/Quiz_1.vue"),
+  },
+  {
     path: "/register",
     name: "register",
     component: () =>

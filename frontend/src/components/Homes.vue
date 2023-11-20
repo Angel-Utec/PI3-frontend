@@ -91,7 +91,7 @@
     </div>
   </div>
   <div class="row">
-    <div class="center-align col s12 red">
+    <div class="center-align col s12 red darken-1">
       <div class="center-align white-text">
         <h4>Apóyanos</h4>
         <img
@@ -105,7 +105,7 @@
           realidad
         </p>
         <router-link to="/ayuda"
-          ><a class="waves-effect waves-light btn-large red"
+          ><a class="waves-effect waves-light btn-large amber darken-3"
             >Apoyanos<i class="material-icons right">attach_money</i></a
           ></router-link
         >
@@ -161,15 +161,20 @@ export default {
   mounted() {
     M.AutoInit();
 
-    document.addEventListener("DOMContentLoaded", function () {
-      var elems = document.querySelectorAll(".sidenav");
+    document.addEventListener("DOMContentLoaded", () => {
+      const elems = document.querySelectorAll(".sidenav");
       M.Sidenav.init(elems);
 
-      var carousel = document.querySelector(".carousel");
+      const carousel = document.querySelector(".carousel");
       M.Carousel.init(carousel, {
         fullWidth: true,
         indicators: true,
       });
+
+      setInterval(() => {
+        const instance = M.Carousel.getInstance(carousel);
+        instance.next();
+      }, 5000);
     });
   },
 };

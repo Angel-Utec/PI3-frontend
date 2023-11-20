@@ -24,7 +24,7 @@
               Matemáticas<i class="material-icons right">more_vert</i>
             </span>
             <router-link to="/curso-matematica"
-              ><a class="waves-effect waves-light btn-large blue">
+              ><a class="waves-effect waves-light btn-large yellow accent-4">
                 <div class="center-align">
                   Vamos allá<i class="material-icons right">send</i>
                 </div></a
@@ -52,7 +52,7 @@
               Comunicación<i class="material-icons right">more_vert</i>
             </span>
             <router-link to="/curso-comunicacion"
-              ><a class="waves-effect waves-light btn-large blue">
+              ><a class="waves-effect waves-light btn-large yellow accent-4">
                 <div class="center-align">
                   Vamos allá<i class="material-icons right">send</i>
                 </div></a
@@ -80,7 +80,7 @@
               Ciencias y Tecnología<i class="material-icons right">more_vert</i>
             </span>
             <router-link to="/curso-ciencia"
-              ><a class="waves-effect waves-light btn-large blue">
+              ><a class="waves-effect waves-light btn-large yellow accent-4">
                 <div class="center-align">
                   Vamos allá<i class="material-icons right">send</i>
                 </div></a
@@ -111,7 +111,7 @@
               Ciencias Sociales<i class="material-icons right">more_vert</i>
             </span>
             <router-link to="/curso-social"
-              ><a class="waves-effect waves-light btn-large blue">
+              ><a class="waves-effect waves-light btn-large yellow accent-4">
                 <div class="center-align">
                   Vamos allá<i class="material-icons right">send</i>
                 </div></a
@@ -141,7 +141,7 @@
               >
             </span>
             <router-link to="/curso-trabajo"
-              ><a class="waves-effect waves-light btn-large blue">
+              ><a class="waves-effect waves-light btn-large yellow accent-4">
                 <div class="center-align">
                   Vamos allá<i class="material-icons right">send</i>
                 </div></a
@@ -189,18 +189,18 @@ Body
   height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
+  background-position: center;
 }
 .home_content {
   position: absolute;
   left: 50%;
-  bottom: 450px;
+  bottom: 50px;
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   -o-transform: translateX(-50%);
   transform: translateX(-50%);
-  background: rgb(80, 162, 255);
+  background: #db3026;
   padding-left: 60px;
   padding-right: 60px;
 }
@@ -210,7 +210,7 @@ Body
 }
 .line-divider {
   width: 5%;
-  border-top: 5px solid red;
+  border-top: 5px solid #ffa000;
   margin: 0 auto;
 }
 .card-image img {

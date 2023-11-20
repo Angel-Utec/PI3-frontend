@@ -21,7 +21,7 @@
   <div class="spacer"></div>
 
   <div class="row">
-    <div class="center-align col s12 black">
+    <div class="center-align col s12 red">
       <div class="center-align white-text">
         <h4>¡Entérese de todo!</h4>
         <h6>
@@ -36,7 +36,7 @@
             >
             <div class="button">
               <button
-                class="btn waves-effect waves-light"
+                class="btn waves-effect waves-light amber darken-2"
                 type="submit"
                 name="action"
               >
@@ -99,11 +99,7 @@
   align-items: center;
   height: 200px; /* Establece la altura que desees para el cuadrado */
   width: 500px; /* Establece el ancho que desees para el cuadrado */
-  background-color: rgb(
-    41,
-    156,
-    194
-  ); /* Cambia el color de fondo a tu elección */
+  background-color: #ffd600; /* Cambia el color de fondo a tu elección */
   border-radius: 20px; /* Aplica esquinas curvas ajustando el valor según tu preferencia */
 }
 

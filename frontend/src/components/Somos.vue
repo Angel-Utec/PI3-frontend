@@ -52,12 +52,12 @@
     <img class="responsive-img" src="../assets/users.png" />
     <h5>Mauricio Diaz</h5>
   </div>
-  <div class="center-align black">
+  <div class="center-align red darken-1">
     <h5 class="white-text">
       Tambien puedes consultar en nuestra sección de preguntas frecuentes:
     </h5>
     <router-link to="/FAQ"
-      ><a class="waves-effect waves-light btn-large blue"
+      ><a class="waves-effect waves-light btn-large amber darken-3"
         >FAQ<i class="material-icons right">send</i></a
       ></router-link
     >
