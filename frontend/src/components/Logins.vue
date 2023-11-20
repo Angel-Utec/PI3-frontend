@@ -1,7 +1,7 @@
 <template>
   <div class="container section">
     <div class="row card-panel">
-      <h1><center>Logeate</center></h1>
+      <h1><center>Ingresa</center></h1>
       <form @submit.prevent="login">
         <div class="row">
           <div class="input-field col s12">
@@ -55,7 +55,7 @@ export default {
 
   methods: {
     async login() {
-      const path = "http://127.0.0.1:5000/login";
+      const path = "http://54.89.201.63:5001/login";
       const response = await fetch(path, {
         method: "POST",
         body: JSON.stringify({

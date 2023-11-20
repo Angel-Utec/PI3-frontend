@@ -14,14 +14,14 @@
     </div>
     <div class="center-align" v-if="claseActual < 1">
       <button
-        class="waves-effect waves-light center-align btn-large red"
+        class="waves-effect waves-light center-align btn-large blue"
         @click="loadNextClass"
       >
         Siguiente clase<i class="material-icons right">arrow_forward</i>
       </button>
     </div>
     <div class="center-align">
-      <router-link to="/quiz-historia" v-if="claseActual === 1">
+      <router-link to="/quiz-ciencias" v-if="claseActual === 1">
         <a class="waves-effect waves-light btn-large blue">
           Inicie el Quiz<i class="material-icons right">send</i>
         </a>

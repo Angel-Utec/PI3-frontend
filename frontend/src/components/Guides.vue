@@ -23,22 +23,13 @@
             <span class="card-title activator grey-text text-darken-4">
               Matemáticas<i class="material-icons right">more_vert</i>
             </span>
-            <router-link to="/curso-matematica"
+            <router-link to="/curso-matematicas"
               ><a class="waves-effect waves-light btn-large yellow accent-4">
                 <div class="center-align">
                   Vamos allá<i class="material-icons right">send</i>
                 </div></a
               ></router-link
             >
-          </div>
-          <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4">
-              Información del curso<i class="material-icons right">close</i>
-            </span>
-            <p>
-              Aprende con nosotros los conceptos basicos de matemáticas de
-              manera divertida.
-            </p>
           </div>
         </div>
       </div>
@@ -59,15 +50,6 @@
               ></router-link
             >
           </div>
-          <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4">
-              Información del curso<i class="material-icons right">close</i>
-            </span>
-            <p>
-              Here is some more information about this product that is only
-              revealed once clicked on.
-            </p>
-          </div>
         </div>
       </div>
       <div class="col s12 m6 l4">
@@ -86,15 +68,6 @@
                 </div></a
               ></router-link
             >
-          </div>
-          <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4">
-              Información del curso<i class="material-icons right">close</i>
-            </span>
-            <p>
-              Here is some more information about this product that is only
-              revealed once clicked on.
-            </p>
           </div>
         </div>
       </div>
@@ -118,15 +91,6 @@
               ></router-link
             >
           </div>
-          <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4">
-              Información del curso<i class="material-icons right">close</i>
-            </span>
-            <p>
-              Here is some more information about this product that is only
-              revealed once clicked on.
-            </p>
-          </div>
         </div>
       </div>
       <div class="col s12 m4 offset-m1">
@@ -147,15 +111,6 @@
                 </div></a
               ></router-link
             >
-          </div>
-          <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4">
-              Información del curso<i class="material-icons right">close</i>
-            </span>
-            <p>
-              Here is some more information about this product that is only
-              revealed once clicked on.
-            </p>
           </div>
         </div>
       </div>
@@ -218,9 +173,9 @@ Body
   height: auto; /* Esto mantiene la proporción original de la imagen */
 }
 .card {
-  width: 80%; /* O el ancho deseado */
+  width: 70%; /* O el ancho deseado */
   height: auto; /* Esto ajustará automáticamente la altura según el contenido */
   margin: 20px; /* Ajusta el margen según sea necesario */
-  margin-left: 60px;
+  margin-left: 100px;
 }
 </style>

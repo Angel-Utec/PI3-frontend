@@ -70,14 +70,14 @@
   <div class="row">
     <div class="center-align col s6">
       <img
-        src="https://cdn-icons-png.flaticon.com/512/2170/2170765.png"
+        src="https://cdn-icons-png.flaticon.com/512/5732/5732217.png"
         alt=""
         style="max-width: 100px; max-height: 100px"
       />
-      <h4>Comunidad</h4>
+      <h4>Quiz</h4>
       <p>
-        Accede a nuestra comunidad en línea con otros <br />alumnos dentro de
-        nuestra plataforma
+        Accede a nuestras diversos quizzes divertidos<br />
+        y aprende junto a ellos.
       </p>
     </div>
     <div class="center-align col s6">

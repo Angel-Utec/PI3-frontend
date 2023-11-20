@@ -38,12 +38,6 @@ const routes = [
       import(/* webpackChunkName: "Category" */ "../components/Ayudas.vue"),
   },
   {
-    path: "/cursos",
-    name: "cursos",
-    component: () =>
-      import(/* webpackChunkName: "Category" */ "../components/Cursos.vue"),
-  },
-  {
     path: "/curso-social",
     name: "historia",
     component: () =>
@@ -52,10 +46,76 @@ const routes = [
       ),
   },
   {
-    path: "/quiz",
-    name: "Quiz1",
+    path: "/curso-matematicas",
+    name: "matematicas",
     component: () =>
-      import(/* webpackChunkName: "Category" */ "../components/Quiz_1.vue"),
+      import(
+        /* webpackChunkName: "Category" */ "../components/Cursos-matematicas.vue"
+      ),
+  },
+  {
+    path: "/curso-ciencia",
+    name: "ciencia",
+    component: () =>
+      import(
+        /* webpackChunkName: "Category" */ "../components/Cursos-ciencias.vue"
+      ),
+  },
+  {
+    path: "/curso-trabajo",
+    name: "trabajo",
+    component: () =>
+      import(
+        /* webpackChunkName: "Category" */ "../components/Cursos-trabajo.vue"
+      ),
+  },
+  {
+    path: "/curso-comunicacion",
+    name: "comunicacion",
+    component: () =>
+      import(
+        /* webpackChunkName: "Category" */ "../components/Cursos-comunicacion.vue"
+      ),
+  },
+  {
+    path: "/quiz-historia",
+    name: "quiz_historia",
+    component: () =>
+      import(
+        /* webpackChunkName: "Category" */ "../components/Quiz_historia.vue"
+      ),
+  },
+  {
+    path: "/quiz-matematicas",
+    name: "Quiz_historia",
+    component: () =>
+      import(
+        /* webpackChunkName: "Category" */ "../components/Quiz_matematicas.vue"
+      ),
+  },
+  {
+    path: "/quiz-ciencias",
+    name: "Quiz_ciencias",
+    component: () =>
+      import(
+        /* webpackChunkName: "Category" */ "../components/Quiz_ciencias.vue"
+      ),
+  },
+  {
+    path: "/quiz-comunicacion",
+    name: "Quiz_comunicacion",
+    component: () =>
+      import(
+        /* webpackChunkName: "Category" */ "../components/Quiz_comunicacion.vue"
+      ),
+  },
+  {
+    path: "/quiz-trabajo",
+    name: "Quiz_trabajo",
+    component: () =>
+      import(
+        /* webpackChunkName: "Category" */ "../components/Quiz_trabajo.vue"
+      ),
   },
   {
     path: "/register",

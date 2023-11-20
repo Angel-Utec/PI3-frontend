@@ -43,14 +43,12 @@
       y conocimientos únicos para garantizar que EducaTEC sea una plataforma de
       educación excepcional.
     </p>
-    <img class="responsive-img s6" src="../assets/users.png" />
-    <h5>Angel Tito</h5>
-    <img class="responsive-img s6" src="../assets/users.png" />
-    <h5>Ronaldo Flores</h5>
-    <img class="responsive-img" src="../assets/users.png" />
-    <h5>Rodo Vilcaromero</h5>
-    <img class="responsive-img" src="../assets/users.png" />
-    <h5>Mauricio Diaz</h5>
+    <div class="row">
+      <div v-for="(member, index) in teamMembers" :key="index" class="col s3">
+        <img class="responsive-img" src="../assets/users.png" />
+        <h5>{{ member.name }}</h5>
+      </div>
+    </div>
   </div>
   <div class="center-align red darken-1">
     <h5 class="white-text">
@@ -80,3 +78,21 @@
   margin-top: 200px; /* Espaciado */
 }
 </style>
+
+<script>
+export default {
+  data() {
+    return {
+      // Aquí puedes agregar la información de tu equipo
+      teamMembers: [
+        { name: "Angel Tito" },
+        { name: "Ronaldo Flores" },
+        { name: "Rodo Vilcaromero" },
+        { name: "Mauricio Diaz" },
+        // Puedes agregar más miembros según sea necesario
+      ],
+    };
+  },
+  // ... (métodos y otros detalles)
+};
+</script>

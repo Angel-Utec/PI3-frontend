@@ -16,7 +16,7 @@ from werkzeug.security import check_password_hash, generate_password_hash
 
 from flask_cors import CORS
 
-from models import setup_db, Category, Post, User
+from models import setup_db, Category, Post, User, Quiz
 
 #Paginación
 
@@ -76,6 +76,76 @@ def create_app(test_config=None):
                     'password': user.password,
                 }
             })
+        
+    @app.route('/quiz-historia/<quiz_id>', methods=['GET'])
+    def get_quiz_by_id(quiz_id):
+        # Obtener la pregunta del quiz por ID
+        quiz = Quiz.query.filter(Quiz.id_category == quiz_id, Quiz.category == 'Historia').first()
+
+        if quiz is None:
+            abort(404)
+
+        return jsonify({
+            'success': True,
+            'quiz': [quiz.format()],
+            'total_quiz': 1
+    })
+
+    @app.route('/quiz-matematicas/<quiz_id>', methods=['GET'])
+    def get_quiz_by_id_1(quiz_id):
+        # Obtener la pregunta del quiz por ID
+        quiz = Quiz.query.filter(Quiz.id_category == quiz_id, Quiz.category == 'Matemáticas').first()
+
+        if quiz is None:
+            abort(404)
+
+        return jsonify({
+            'success': True,
+            'quiz': [quiz.format()],
+            'total_quiz': 1
+    })
+
+    @app.route('/quiz-comunicacion/<quiz_id>', methods=['GET'])
+    def get_quiz_by_id_2(quiz_id):
+        # Obtener la pregunta del quiz por ID
+        quiz = Quiz.query.filter(Quiz.id_category == quiz_id, Quiz.category == 'Comunicación').first()
+
+        if quiz is None:
+            abort(404)
+
+        return jsonify({
+            'success': True,
+            'quiz': [quiz.format()],
+            'total_quiz': 1
+    })
+
+    @app.route('/quiz-ciencia/<quiz_id>', methods=['GET'])
+    def get_quiz_by_id_3(quiz_id):
+        # Obtener la pregunta del quiz por ID
+        quiz = Quiz.query.filter(Quiz.id_category == quiz_id, Quiz.category == 'Ciencias').first()
+
+        if quiz is None:
+            abort(404)
+
+        return jsonify({
+            'success': True,
+            'quiz': [quiz.format()],
+            'total_quiz': 1
+    })
+
+    @app.route('/quiz-trabajo/<quiz_id>', methods=['GET'])
+    def get_quiz_by_id_4(quiz_id):
+        # Obtener la pregunta del quiz por ID
+        quiz = Quiz.query.filter(Quiz.id_category == quiz_id, Quiz.category == 'Trabajo').first()
+
+        if quiz is None:
+            abort(404)
+
+        return jsonify({
+            'success': True,
+            'quiz': [quiz.format()],
+            'total_quiz': 1
+    })
 
     @app.route('/posts', methods=['GET'])      
     def get_posts():

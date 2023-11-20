@@ -1,18 +1,18 @@
 <template>
-  <div class="Quiz1">
+  <div class="Quiz2">
     <h1></h1>
-    <Quiz />
+    <Quiz2 />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import Quiz from "@/components/Quiz_historia.vue";
+import Quiz2 from "@/components/Quiz_matematicas.vue";
 
 export default {
-  name: "Quiz1",
+  name: "Quiz2",
   components: {
-    Quiz,
+    Quiz2,
   },
 };
 </script>

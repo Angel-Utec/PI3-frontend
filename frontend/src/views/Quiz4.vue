@@ -1,5 +1,5 @@
 <template>
-  <div class="Quiz1">
+  <div class="Quiz4">
     <h1></h1>
     <Quiz />
   </div>
@@ -7,10 +7,10 @@
 
 <script>
 // @ is an alias to /src
-import Quiz from "@/components/Quiz_historia.vue";
+import Quiz from "@/components/Quiz_comunicacion.vue";
 
 export default {
-  name: "Quiz1",
+  name: "Quiz4",
   components: {
     Quiz,
   },

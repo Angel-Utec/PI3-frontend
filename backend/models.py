@@ -1,5 +1,5 @@
 from flask_sqlalchemy import SQLAlchemy 
-from datetime import datetime 
+from datetime import datetime
 
 
 database_path='postgresql://postgres:12345678@pi3.ccbfa26cin0h.us-east-1.rds.amazonaws.com:5432/postgres'
@@ -97,6 +97,41 @@ class User(db.Model):
         return {
             'id':self.id,
             'username':self.username
+        }
+
+    def insert(self):
+        db.session.add(self)
+        db.session.commit()
+
+    def update(self):
+        db.session.commit()
+
+    def delete(self):
+        db.session.delete(self)
+        db.session.commit()
+
+class Quiz(db.Model):
+    __tablename__ = 'quiz'
+    id = db.Column(db.Integer, primary_key=True)
+    id_category = db.Column(db.Integer)
+    category = db.Column(db.String(50), nullable=False)
+    type = db.Column(db.Text)
+    difficulty = db.Column(db.Text)
+    question = db.Column(db.Text)
+    correct_answer = db.Column(db.Text)
+    incorrect_answers = db.Column(db.Text)
+
+    # El método format, insert, update, delete permanece igual
+    def format(self):
+        return {
+            'id': self.id,
+            'id_category': self.id_category,
+            'category': self.category,
+            'type': self.type,
+            'difficulty': self.difficulty,
+            'question': self.question,
+            'correct_answer': self.correct_answer,
+            'incorrect_answers': self.incorrect_answers
         }
 
     def insert(self):
