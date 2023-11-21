@@ -179,3 +179,27 @@ Body
   margin-left: 100px;
 }
 </style>
+
+<script>
+export default {
+  mounted() {
+    // Obtiene el valor actual de refreshPage del almacenamiento local
+    const refreshPage = localStorage.getItem("refreshPage");
+
+    // Si refreshPage no está definido o es 0, se puede realizar la recarga
+    if (!refreshPage || refreshPage === "0") {
+      // Llama al método para recargar la página
+      this.refreshPage();
+
+      // Actualiza el valor de refreshPage en el almacenamiento local a 1
+      localStorage.setItem("refreshPage", "1");
+    }
+  },
+  methods: {
+    refreshPage() {
+      // Recarga la página
+      location.reload();
+    },
+  },
+};
+</script>

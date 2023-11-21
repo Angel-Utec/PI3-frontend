@@ -83,6 +83,7 @@ class User(db.Model):
     id = db.Column(db.Integer, primary_key = True)
     username = db.Column(db.String(50))
     password = db.Column(db.Text)
+    total_score = db.Column(db.integer)
 
     def __init__(self, username, password) -> None:
         self.username = username
@@ -96,7 +97,8 @@ class User(db.Model):
     def format(self):
         return {
             'id':self.id,
-            'username':self.username
+            'username':self.username,
+            'total_score': self.total_score,
         }
 
     def insert(self):

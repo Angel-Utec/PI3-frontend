@@ -10,6 +10,7 @@
         </div>
         <div class="col-md-6 offset-md-3">
           <div class="faq" id="accordion">
+            <!-- Pregunta 1 -->
             <div class="card">
               <div class="card-header" id="faqHeading-1">
                 <div class="mb-0">
@@ -20,7 +21,8 @@
                     data-aria-expanded="true"
                     data-aria-controls="faqCollapse-1"
                   >
-                    <span class="badge">1</span>What is Lorem Ipsum?
+                    <span class="badge">1</span>¿Cómo puedo acceder a las clases
+                    grabadas?
                   </h5>
                 </div>
               </div>
@@ -32,15 +34,15 @@
               >
                 <div class="card-body">
                   <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book.
+                    Puedes acceder a las clases grabadas iniciando sesión en tu
+                    cuenta de EducaTEC y escogiendo un curso en la sección de
+                    guía.
                   </p>
                 </div>
               </div>
             </div>
+
+            <!-- Pregunta 2 -->
             <div class="card">
               <div class="card-header" id="faqHeading-2">
                 <div class="mb-0">
@@ -51,7 +53,8 @@
                     data-aria-expanded="false"
                     data-aria-controls="faqCollapse-2"
                   >
-                    <span class="badge">2</span> Where does it come from?
+                    <span class="badge">2</span>¿Qué recursos educativos ofrece
+                    EducaTEC?
                   </h5>
                 </div>
               </div>
@@ -63,13 +66,16 @@
               >
                 <div class="card-body">
                   <p>
-                    Contrary to popular belief, Lorem Ipsum is not simply random
-                    text. It has roots in a piece of classical Latin literature
-                    from 45 BC, making it over 2000 years old.
+                    EducaTEC ofrece una variedad de recursos educativos,
+                    incluyendo materiales de lectura, videos educativos y
+                    actividades interactivas. Puedes explorar estos recursos en
+                    la sección correspondiente.
                   </p>
                 </div>
               </div>
             </div>
+
+            <!-- Pregunta 3 -->
             <div class="card">
               <div class="card-header" id="faqHeading-3">
                 <div class="mb-0">
@@ -80,7 +86,8 @@
                     data-aria-expanded="false"
                     data-aria-controls="faqCollapse-3"
                   >
-                    <span class="badge">3</span>Why do we use it?
+                    <span class="badge">3</span>¿Cómo puedo contribuir y apoyar
+                    el proyecto EducaTEC?
                   </h5>
                 </div>
               </div>
@@ -92,15 +99,16 @@
               >
                 <div class="card-body">
                   <p>
-                    It is a long established fact that a reader will be
-                    distracted by the readable content of a page when looking at
-                    its layout. The point of using Lorem Ipsum is that it has a
-                    more-or-less normal distribution of letters, as opposed to
-                    using 'Content here, content here.
+                    Si estás interesado en apoyar nuestro proyecto, puedes
+                    visitar la sección de "Apóyanos" para obtener más
+                    información sobre cómo contribuir financieramente o como
+                    voluntario.
                   </p>
                 </div>
               </div>
             </div>
+
+            <!-- Pregunta 4 -->
             <div class="card">
               <div class="card-header" id="faqHeading-4">
                 <div class="mb-0">
@@ -111,7 +119,8 @@
                     data-aria-expanded="false"
                     data-aria-controls="faqCollapse-4"
                   >
-                    <span class="badge">4</span> Where can I get some?
+                    <span class="badge">4</span>¿Cuál es la edad recomendada
+                    para utilizar EducaTEC?
                   </h5>
                 </div>
               </div>
@@ -123,14 +132,15 @@
               >
                 <div class="card-body">
                   <p>
-                    There are many variations of passages of Lorem Ipsum
-                    available, but the majority have suffered alteration in some
-                    form, by injected humour, or randomised words which don't
-                    look even slightly believable.
+                    EducaTEC está diseñado principalmente para estudiantes de
+                    4to y 5to de secundaria, pero sus recursos educativos pueden
+                    ser útiles para estudiantes de diversas edades.
                   </p>
                 </div>
               </div>
             </div>
+
+            <!-- Pregunta 5 -->
             <div class="card">
               <div class="card-header" id="faqHeading-5">
                 <div class="mb-0">
@@ -141,7 +151,8 @@
                     data-aria-expanded="false"
                     data-aria-controls="faqCollapse-5"
                   >
-                    <span class="badge">5</span> What is Lorem Ipsum?
+                    <span class="badge">5</span>¿Cómo puedo formar parte del
+                    equipo de EducaTEC?
                   </h5>
                 </div>
               </div>
@@ -153,14 +164,15 @@
               >
                 <div class="card-body">
                   <p>
-                    It has survived not only five centuries, but also the leap
-                    into electronic typesetting, remaining essentially
-                    unchanged. It was popularised in the 1960s with the release
-                    of Letraset sheets containing
+                    Si estás interesado en unirte a nuestro equipo, contáctenos
+                    mediante nuestro correo o nuestro número telefónico para
+                    obtener mayor información.
                   </p>
                 </div>
               </div>
             </div>
+
+            <!-- Pregunta 6 -->
             <div class="card">
               <div class="card-header" id="faqHeading-6">
                 <div class="mb-0">
@@ -171,7 +183,8 @@
                     data-aria-expanded="false"
                     data-aria-controls="faqCollapse-6"
                   >
-                    <span class="badge">6</span> Where does it come from?
+                    <span class="badge">6</span>¿Puedo acceder a EducaTEC desde
+                    cualquier ubicación?
                   </h5>
                 </div>
               </div>
@@ -183,47 +196,15 @@
               >
                 <div class="card-body">
                   <p>
-                    The standard chunk of Lorem Ipsum used since the 1500s is
-                    reproduced below for those interested. Sections 1.10.32 and
-                    1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are
-                    also reproduced in their exact original form, accompanied by
-                    English versions from the 1914 translation by H. Rackham.
+                    Sí, EducaTEC está disponible para estudiantes de todo el
+                    país. Puedes acceder a la plataforma desde cualquier
+                    ubicación con conexión a Internet.
                   </p>
                 </div>
               </div>
             </div>
-            <div class="card">
-              <div class="card-header" id="faqHeading-7">
-                <div class="mb-0">
-                  <h5
-                    class="faq-title"
-                    data-toggle="collapse"
-                    data-target="#faqCollapse-7"
-                    data-aria-expanded="false"
-                    data-aria-controls="faqCollapse-7"
-                  >
-                    <span class="badge">7</span> Why do we use it?
-                  </h5>
-                </div>
-              </div>
-              <div
-                id="faqCollapse-7"
-                class="collapse"
-                aria-labelledby="faqHeading-7"
-                data-parent="#accordion"
-              >
-                <div class="card-body">
-                  <p>
-                    Many desktop publishing packages and web page editors now
-                    use Lorem Ipsum as their default model text, and a search
-                    for 'lorem ipsum' will uncover many web sites still in their
-                    infancy. Various versions have evolved over the years,
-                    sometimes by accident, sometimes on purpose (injected humour
-                    and the like).
-                  </p>
-                </div>
-              </div>
-            </div>
+
+            <!-- Puedes agregar más preguntas y respuestas según tus necesidades -->
           </div>
         </div>
       </div>
@@ -346,3 +327,33 @@
   }
 }
 </style>
+
+<script>
+export default {
+  mounted() {
+    // Define el nuevo nombre de la variable de almacenamiento local
+    const newStorageVariable = "newRefreshPage";
+
+    // Obtiene el valor actual de la nueva variable del almacenamiento local
+    const refreshPage = localStorage.getItem(newStorageVariable);
+
+    // Si la nueva variable no está definida o es 0, se puede realizar la recarga
+    if (!refreshPage || refreshPage === "0") {
+      // Llama al método para recargar la página
+      this.refreshPage();
+
+      // Elimina la variable del almacenamiento local
+      localStorage.removeItem(newStorageVariable);
+
+      // Vuelve a crear la variable y establece su valor en 1
+      localStorage.setItem(newStorageVariable, "1");
+    }
+  },
+  methods: {
+    refreshPage() {
+      // Recarga la página
+      location.reload();
+    },
+  },
+};
+</script>
