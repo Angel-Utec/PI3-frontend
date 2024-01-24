@@ -43,6 +43,8 @@
       y conocimientos únicos para garantizar que EducaTEC sea una plataforma de
       educación excepcional.
     </p>
+    <br />
+    <br />
     <div class="row">
       <div v-for="(member, index) in teamMembers" :key="index" class="col s3">
         <img class="responsive-img" src="../assets/users.png" />
@@ -51,16 +53,19 @@
     </div>
   </div>
   <div class="center-align red darken-1">
+    <br />
     <h5 class="white-text">
       Tambien puedes consultar en nuestra sección de preguntas frecuentes:
     </h5>
+    <br />
     <router-link to="/FAQ"
       ><a class="waves-effect waves-light btn-large amber darken-3"
         >FAQ<i class="material-icons right">send</i></a
       ></router-link
     >
+    <br />
+    <br />
   </div>
-  <div class="spacer"></div>
 </template>
 
 <style>

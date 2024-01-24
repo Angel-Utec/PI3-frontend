@@ -27,7 +27,11 @@
           <div id="result" v-html="formattedResultMessage"></div>
         </div>
         <div class="quiz-foot">
-          <button @click="checkAnswer" :disabled="checkBtnDisabled">
+          <button
+            @click="checkAnswer"
+            :disabled="disableCheckButton"
+            v-if="!showPlayAgainBtn"
+          >
             Confirmar respuesta
           </button>
           <span style="margin: 0 10px"></span>
@@ -218,6 +222,7 @@ export default {
       resultMessage: "",
       selectedOptionIndex: null,
       currentQuestionNumber: 1,
+      disableCheckButton: false,
     };
   },
   computed: {
@@ -281,11 +286,17 @@ export default {
           this.resultMessage = "<p><i class='fas fa-check'></i> ¡Correcto!</p>";
         } else {
           this.resultMessage = `
-            <p><i class='fas fa-times'></i> ¡Incorrecto!</p>
-            <small><b>Respuesta correcta: </b>${this.correctAnswer}</small>
-          `;
+        <p><i class='fas fa-times'></i> ¡Incorrecto!</p>
+        <small><b>Respuesta correcta: </b>${this.correctAnswer}</small>
+      `;
         }
         this.checkCount();
+
+        // Deshabilitar el botón durante el mismo tiempo que el setTimeout
+        this.disableCheckButton = true;
+        setTimeout(() => {
+          this.disableCheckButton = false;
+        }, 3000);
       } else {
         this.resultMessage =
           "<p><i class='fas fa-question'></i> Tienes que seleccionar una opción</p>";

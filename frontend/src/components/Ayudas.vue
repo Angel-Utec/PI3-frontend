@@ -34,6 +34,8 @@
             <label for="icon_prefix" class="white-text"
               >Correo electrónico</label
             >
+            <br />
+            <br />
             <div class="button">
               <button
                 class="btn waves-effect waves-light amber darken-2"
@@ -43,6 +45,8 @@
                 Enviar
                 <i class="material-icons right">send</i>
               </button>
+              <br />
+              <br />
             </div>
           </div>
         </div>

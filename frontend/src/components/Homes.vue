@@ -109,6 +109,8 @@
             >Apoyanos<i class="material-icons right">attach_money</i></a
           ></router-link
         >
+        <br />
+        <br />
       </div>
     </div>
   </div>
@@ -149,7 +151,7 @@ body {
 }
 .custom-carousel {
   max-width: 100%; /* Cambia este valor según tus necesidades */
-  min-height: 600px;
+  min-height: 500px;
   margin: auto; /* Centra el carrusel en la página */
 }
 </style>

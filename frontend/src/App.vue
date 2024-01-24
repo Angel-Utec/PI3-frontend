@@ -61,6 +61,7 @@
     <div id="content-container">
       <div class="content">
         <router-view></router-view>
+        <google-analytics />
       </div>
     </div>
   </div>
